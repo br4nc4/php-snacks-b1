@@ -50,21 +50,19 @@ $squadreBasket = [
 <body>
     <div class="container">
         <h1 class="text-center text-success">SQUADRE BASKET</h1>
-        <div class="d-flex">
-            <!-- SQUADRE -->
+        <div class="d-flex justify-content-center">
+            <!-- SQUADRE  e PUNTI-->
             <ul class="list-unstyled">
                 <?php 
                 for ($i = 0; $i < count($squadreBasket); $i++) { 
                     $squadraCorrente = $squadreBasket[$i];
                 ?>
-                <li><?php echo $squadraCorrente["squadraCasa"] . "-" . $squadraCorrente["squadraOspite"]?></li>
-                <?php } ?>
-            </ul>
-
-            <ul class="list-unstyled">
                 <li>
-
+                    <?php 
+                    echo $squadraCorrente["squadraCasa"] . " - " . $squadraCorrente["squadraOspite"] . " | " . $squadraCorrente["puntiSquadraCasa"] . " - " . $squadraCorrente["puntiSquadraOspite"]
+                    ?>
                 </li>
+                <?php } ?>
             </ul>
         </div>
     </div>
