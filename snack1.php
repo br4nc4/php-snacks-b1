@@ -62,16 +62,16 @@ $squadreBasket = [
         <h1 class="text-center text-success">SQUADRE BASKET</h1>
         <div class="d-flex">
             <!-- SQUADRE -->
-            <ul>
+            <ul class="list-unstyled">
                 <?php 
-                for($i = 0; $i < count($squadreBasket); $i++) { 
+                for ($i = 0; $i < count($squadreBasket); $i++) { 
                     $squadraCorrente = $squadreBasket[$i];
                 ?>
-                <li></li>
+                <li><?php echo $squadraCorrente["squadraCasa"]?></li>
                 <?php } ?>
             </ul>
 
-            <ul>
+            <ul class="list-unstyled">
                 <li>
 
                 </li>
