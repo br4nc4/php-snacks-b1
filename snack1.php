@@ -7,42 +7,32 @@ Olimpia Milano - Cantù | 55-60 -->
 $squadreBasket = [
     [
         "squadraCasa" => "Los Angeles Lakers",
-        "puntiSquadraCasa" => "78",
-    ],
-    [
         "squadraOspite" => "Golden State Warriors",
+        "puntiSquadraCasa" => "78",
         "puntiSquadraOspite" => "80",
     ],
     [
         "squadraCasa" => "Miami Heat",
-        "puntiSquadraCasa" => "45",
-    ],
-    [
         "squadraOspite" => "Boston Celtics",
+        "puntiSquadraCasa" => "45",
         "puntiSquadraOspite" => "23",
     ],
     [
         "squadraCasa" => "New York Knicks",
-        "puntiSquadraCasa" => "69",
-    ],
-    [
         "squadraOspite" => "Chicago Bulls",
+        "puntiSquadraCasa" => "69",
         "puntiSquadraOspite" => "92",
     ],
     [
         "squadraCasa" => "Cleveland",
-        "puntiSquadraCasa" => "51",
-    ],
-    [
         "squadraOspite" => "Milwaukee Bucks",
+        "puntiSquadraCasa" => "51",
         "puntiSquadraOspite" => "54",
     ],
     [
         "squadraCasa" => "Brooklyn Nets",
-        "puntiSquadraCasa" => "77",
-    ],
-    [
         "squadraOspite" => "Washington Wizards",
+        "puntiSquadraCasa" => "77",
         "puntiSquadraOspite" => "76",
     ],
 ];
@@ -67,7 +57,7 @@ $squadreBasket = [
                 for ($i = 0; $i < count($squadreBasket); $i++) { 
                     $squadraCorrente = $squadreBasket[$i];
                 ?>
-                <li><?php echo $squadraCorrente["squadraCasa"]?></li>
+                <li><?php echo $squadraCorrente["squadraCasa"] . "-" . $squadraCorrente["squadraOspite"]?></li>
                 <?php } ?>
             </ul>
 
